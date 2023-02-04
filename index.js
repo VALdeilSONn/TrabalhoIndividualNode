@@ -1,25 +1,14 @@
-const readlineSync = require ('readline-sync');
+const readline = require('readline-sync');
 
-const ListaCSS = [];
+const cssList = [];
 
-const func = () => {
-  let cadastro = true;
-  let input = "";
-
-  while (cadastro) {
-    input = readlineSync
-      .question("Digite codigo em CSS ou digite 'sair': ")
-      .toLowerCase()
-    if (input === "") {
-      console.log("Por favor, digite codigo CSS");
-    } else if (input !== 'sair') {
-      ListaCSS.push(input);
-    } else {
-      cadastro = false;
-    }
+const addCSS = () => {
+  while (true) {
+    const code = readline.question("Enter CSS code or 'exit': ");
+    if (code.toLowerCase() === 'exit') break;
+    if (code) cssList.push(code);
   }
-  console.log(ListaCSS.sort());
+  console.log(cssList.sort().join('\n'));
+};
 
-}
-
-func();
+addCSS();
