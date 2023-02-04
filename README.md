@@ -2,7 +2,7 @@
 
 <h1>Olá, aqui irei mostrar o funcionamento e darei explicações referente ao meu trabalho em Node.ja, vamos começar❓</h1>
 <br><hr>
-<h1>Aqui irei explicar oque o trabalho faz:
+<h1>Oque o trabalho faz:
 
  🧩Esse código em Node.js permite ao usuário digitar vários códigos CSS (folhas de estilo para páginas da web) e armazená-los em uma lista. A cada iteração, o usuário pode digitar um novo código CSS ou digitar "sair" para sair do loop.
 
